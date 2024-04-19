@@ -17,7 +17,7 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 //Doan code thay chữ giảm giá bằng % sale
-//* Add stock status to archive pages
+
 add_filter( 'woocommerce_get_availability', 'custom_override_get_availability', 1, 2);
 
 // The hook in function $availability is passed via the filter!
@@ -113,4 +113,4 @@ function devvn_product_category_rewrite_rules($flash = false) {
 		flush_rewrite_rules(false);
 }
 add_action('init', 'devvn_product_category_rewrite_rules');
-/*
+
